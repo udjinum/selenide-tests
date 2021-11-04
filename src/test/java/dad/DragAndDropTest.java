@@ -2,10 +2,6 @@ package dad;
 
 import com.codeborne.selenide.*;
 import org.junit.jupiter.api.*;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.firefox.FirefoxDriver;
-
-import java.awt.event.MouseEvent;
 
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
