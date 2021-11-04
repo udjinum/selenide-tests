@@ -23,6 +23,7 @@ public class DragAndDropTest {
     public void dragAndDropShortTest() {
         open(url);
         columnA.dragAndDropTo(columnB);
+        columnA.shouldHave(exactText("B"));
         columnB.shouldHave(exactText("A"));
     }
 
@@ -35,6 +36,7 @@ public class DragAndDropTest {
                 .moveByOffset(142,-72)
                 .release()
                 .perform();
+        columnA.shouldHave(exactText("B"));
         columnB.shouldHave(exactText("A"));
     }
 }
