@@ -18,13 +18,13 @@ public class DragAndDropTest {
         Configuration.startMaximized = true;
     }
 
+    String url = "https://the-internet.herokuapp.com/drag_and_drop";
+
     private final SelenideElement columnA = $("[id=column-a]");
     private final SelenideElement columnB = $("[id=column-b]");
 
     @Test
     public void dragAndDropShortTest() {
-        String url = "https://the-internet.herokuapp.com/drag_and_drop";
-
         open(url);
         columnA.dragAndDropTo(columnB);
         columnB.shouldHave(exactText("A"));
@@ -32,8 +32,6 @@ public class DragAndDropTest {
 
     @Test
     public void dragAndDropLongTest() {
-        String url = "https://the-internet.herokuapp.com/drag_and_drop";
-
         open(url);
         actions()
                 .moveToElement(columnA,1,1)
