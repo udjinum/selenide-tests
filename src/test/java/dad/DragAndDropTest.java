@@ -20,7 +20,6 @@ public class DragAndDropTest {
 
     private final SelenideElement columnA = $("[id=column-a]");
     private final SelenideElement columnB = $("[id=column-b]");
-    private final ElementsCollection headerLetters = $$("header");
 
     @Test
     public void dragAndDropShortTest() {
