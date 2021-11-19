@@ -15,9 +15,9 @@ public class FindJUnit5CodeTest {
         Configuration.startMaximized = true;
     }
 
-    private final SelenideElement wikiLink = $("[data-content=Wiki]");
-    private final SelenideElement showMorePagesLink = $(".wiki-more-pages-link");
-    private final SelenideElement chaptersList = $(".markdown-body");
+    private final SelenideElement wikiLink = $("[data-content=Wiki]"),
+            showMorePagesLink = $(".wiki-more-pages-link"),
+            chaptersList = $(".markdown-body");
     private final ElementsCollection softAssertionsExamples = $$("ol[start='3']~div");
 
     @Test
